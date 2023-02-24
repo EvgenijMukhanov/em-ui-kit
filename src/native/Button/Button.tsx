@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 
 import './Button.css'
+import '../../index.css'
 
 export interface IButton {
   children?: React.ReactNode
