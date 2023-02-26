@@ -1,6 +1,6 @@
 import React, { FC, DetailedHTMLProps, ButtonHTMLAttributes, AriaAttributes } from "react";
 
-import './Button.module.css'
+import './Button.css'
 // import classes from './Button.module.css'
 import '../../index.css'
 
@@ -11,8 +11,8 @@ export interface IButton extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButt
 
 export const Button:FC<IButton> = ({ children, ...props }) => {
 
-  // const rootClasses = [classes.button]
-  const rootClasses = ['button']
+  // const rootClasses = [classes['em-btn']]
+  const rootClasses = ['em-btn']
 
   if (props.className) {
     rootClasses.push(props.className)

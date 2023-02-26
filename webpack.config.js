@@ -19,14 +19,41 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css/,
-                use: ['style-loader', 'css-loader'],
-            },
-            {
                 test: /\.(ts|tsx)?$/,
                 use: ['ts-loader'],
                 exclude: /node_modules/
+            },
+            {
+                test: /\.css/,
+                use: ['style-loader', 'css-loader'],
             }
+            // {
+            //     test: /\.module\.css$/,
+            //     use: [
+            //         {
+            //             loader: "style-loader"
+            //         },
+            //         {
+            //             loader: "css-loader",
+            //             options: {
+            //                 modules: {
+            //                     localIndentName: '[local]__[sha1:hash:hex:7]'
+            //                 }
+            //             }
+            //         }
+            //     ],
+            // },
+            // {
+            //     test: /^((?!\.module).)*css$/,
+            //     use: [
+            //         {
+            //             loader: "style-loader"
+            //         },
+            //         {
+            //             loader: "css-loader"
+            //         }
+            //     ],
+            // }
         ],
     }
 }
