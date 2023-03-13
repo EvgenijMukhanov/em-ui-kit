@@ -11,7 +11,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Install deps and build (with cache)
-        uses: bahmutov/npm-install@v1
+        uses: EvgenijMukhanov/npm-install@v1
       - name: Install and Build 🔧
         run:
           npm run build-storybook
