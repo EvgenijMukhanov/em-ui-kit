@@ -1,5 +1,5 @@
 
-.button {
+.em-button {
   border: 1px solid var(--primary);
   border-radius: 2px;
   text-transform: uppercase;
@@ -16,7 +16,7 @@
   height: 32px;
 }
 
-.button:hover {
+.em-button:hover {
   background-color: var(--primary);
   border-color: var(--primary);
   color: #ffffff;
