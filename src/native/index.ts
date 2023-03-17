@@ -1,5 +1,3 @@
-import { Button, IButton } from "./Button/Button";
+import { Button, IButton } from './Button/Button';
 
-export {
-  Button, IButton
-}
+export { Button, IButton };

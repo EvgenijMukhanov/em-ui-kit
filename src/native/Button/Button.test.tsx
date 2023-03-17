@@ -1,20 +1,19 @@
-import React from "react"
-import { render, screen } from '@testing-library/react'
+import React from 'react';
+import { render, screen } from '@testing-library/react';
 
-import { Button } from './Button'
+import { Button } from './Button';
 
 describe('Button', () => {
   describe('default', () => {
     test('render', () => {
-      render(<Button className="test">Click me</Button>)
-      const button = screen.getByText('Click me')
-      expect(button).toBeTruthy()
-      
-    }),
+      render(<Button className="test">Click me</Button>);
+      const button = screen.getByText('Click me');
+      expect(button).toBeTruthy();
+    });
     test('apply props', () => {
-      render(<Button className="test">Click me</Button>)
-      const button = screen.getByText('Click me')
-      expect(button.classList.contains('test')).toBeTruthy()
-    })
-  })
-})
+      render(<Button className="test">Click me</Button>);
+      const button = screen.getByText('Click me');
+      expect(button.classList.contains('test')).toBeTruthy();
+    });
+  });
+});
