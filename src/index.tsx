@@ -1,5 +1,3 @@
 import { Button, IButton } from './native';
 
-export {
-  Button, IButton
-};
+export { Button, IButton };
